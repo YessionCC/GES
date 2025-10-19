@@ -64,7 +64,7 @@ def render_network(dataset : ModelParams, iteration : int, pipeline : PipelinePa
         else:
             save_path = "NOT_SAVE"
 
-        exe_path = '/home/yky/Projects/ges/ges_viewer/bin'
+        exe_path = 'ges_viewer/bin'
         cmd_str = f'cd {exe_path}; ./eval {sample_num} {W} {H} {bg_color[0]} {bg_color[1]} {bg_color[2]} {model_path} {outfile_name} {save_path}'
         print(f'Cmd:\n{cmd_str}')
         os.system(cmd_str)
