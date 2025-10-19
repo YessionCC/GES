@@ -9,15 +9,21 @@ Abstract: *We introduce Gaussian-enhanced Surfels (GESs), a bi-scale representat
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@Article{ye25ges,
-      author       = {Keyang, Ye and Tianjia, Shao and Kun, Zhou},
-      title        = {When Gaussian Meets Surfel: Ultra-fast High-fidelity Radiance Field Rendering},
-      journal      = {ACM Transactions on Graphics},
-      number       = {4},
-      volume       = {42},
-      month        = {July},
-      year         = {2023},
-      url          = {https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/}
+    <pre><code>@article{ges25ye,
+author = {Ye, Keyang and Shao, Tianjia and Zhou, Kun},
+title = {When Gaussian Meets Surfel: Ultra-fast High-fidelity Radiance Field Rendering},
+year = {2025},
+issue_date = {August 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {44},
+number = {4},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3730925},
+doi = {10.1145/3730925},
+month = jul,
+articleno = {113},
+numpages = {15},
 }</code></pre>
   </div>
 </section>
