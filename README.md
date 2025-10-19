@@ -63,7 +63,7 @@ You may need to modify the path in `train_all.sh`
   #### --use_surf_reg
   Apply depth-normal consistency loss during the surfel optimization to avoid hole or spiking artifacts.
 
-  #### --stable_train
+  #### --converge
   Optimize surfels with more iterations to make results more stable. We observed that surfel optimization exhibits sensitivity to randomness. To ensure high-quality results in most scenes, we recommend always adding this command.
   
 </details>
