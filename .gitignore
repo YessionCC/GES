@@ -14,3 +14,5 @@ data
 eval
 *.npz
 **/tmp
+temp.txt
+convert.py

@@ -239,7 +239,7 @@ def render_joint(viewpoint_camera, pc : GaussianModel, pipe, bg_color : torch.Te
 
     rets = {}
     
-    s_weight = pc.surfel_weight * torch.exp(-torch.clamp_max(s_mod_depth, 5) / 3) ####
+    s_weight = pc.surfel_weight
     final_color = (s_color*s_weight + weight_color) / (s_weight + weightsum)
 
     final_radii = torch.zeros(pc.get_xyz.shape[0], device='cuda', dtype=torch.int)
