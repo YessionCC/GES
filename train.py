@@ -37,7 +37,8 @@ except ImportError:
 
 def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoint_iterations, checkpoint):
     first_iter = 0
-    args.save_iterations.append(opt.iterations)
+    #args.save_iterations.append(opt.iterations)
+    saving_iterations.append(opt.joint_start_iter)
     tb_writer = prepare_output_and_logger(dataset)
     gaussians = GaussianModel(dataset.sh_degree)
     scene = Scene(dataset, gaussians)
@@ -263,6 +264,9 @@ def training_report(tb_writer, iteration, Ll1, loss, l1_loss, elapsed, last_iter
                     if tb_writer and (idx < 5):
                         tb_writer.add_images(config['name'] + "_view_{}/#2_render".format(viewpoint.image_name), image[None], global_step=iteration)
                         tb_writer.add_images(config['name'] + "_view_{}/#3_error".format(viewpoint.image_name), error_map[None], global_step=iteration)
+                        if "surfel_render" in render_pkg.keys():
+                            s_color = torch.clamp(render_pkg["surfel_render"], 0.0, 1.0)
+                            tb_writer.add_images(config['name'] + "_view_{}/#5_surfel_color".format(viewpoint.image_name), s_color[None], global_step=iteration)
                         if "rend_normal" in render_pkg.keys():
                             rend_normal = render_pkg["rend_normal"] * 0.5 + 0.5
                             tb_writer.add_images(config['name'] + "_view_{}/#4_rend_normal".format(viewpoint.image_name), rend_normal[None], global_step=iteration)

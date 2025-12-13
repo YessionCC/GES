@@ -263,6 +263,7 @@ def render_joint(viewpoint_camera, pc : GaussianModel, pipe, bg_color : torch.Te
 
     rets.update({
         "render": final_color,
+        "surfel_render": s_color,
         'viewspace_points': means2D,
         "visibility_filter" : final_radii > 0,
         "radii": final_radii,

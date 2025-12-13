@@ -1,6 +1,6 @@
 # When Gaussian Meets Surfel: Ultra-fast High-fidelity Radiance Field Rendering
 Keyang Ye, Tianjia Shao, Kun Zhou<br>
-| [Webpage](https://dl.acm.org/doi/10.1145/3730925) | [Full Paper](https://arxiv.org/pdf/2504.17545) 
+| [Webpage](https://yessioncc.github.io/ges_web/) | [Full Paper](https://arxiv.org/pdf/2504.17545) | [Video](https://www.youtube.com/watch?v=DlzzQ1YYsHE)
 
 This repository contains the code implementation associated with the paper "When Gaussian Meets Surfel: Ultra-fast High-fidelity Radiance Field Rendering".
 
