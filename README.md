@@ -28,6 +28,17 @@ numpages = {15},
   </div>
 </section>
 
+## 🚀 Major Update: WebGL Viewer
+
+We are excited to introduce the **GES Web Viewer**, a lightweight online interface powered by WebGL. This new feature allows you to interactively explore trained scenes directly in your web browser—no installation required!
+
+* **Cross-Platform Support:** Support all devices, including **mobile phones**.
+* **Instant Demos:** We have integrated built-in **demo models**, allowing you to visualize and interact with the results immediately.
+
+[👉 **Click here to try the Web Viewer**](https://yessioncc.github.io/ges_web/web_viewer.html)
+
+*Note: This feature is currently in beta. MSAA is not yet supported, so rendering results may differ slightly from the OpenGL version.*
+
 
 ## Installation
 First, please refer to the setup tutorial of vanilla [3DGS](https://github.com/graphdeco-inria/gaussian-splatting). Then, install the following submodules.
