@@ -6,28 +6,6 @@ This repository contains the code implementation associated with the paper "When
 
 Abstract: *We introduce Gaussian-enhanced Surfels (GESs), a bi-scale representation for radiance field rendering, wherein a set of 2D opaque surfels with view-dependent colors represent the coarse-scale geometry and appearance of scenes, and a few 3D Gaussians surrounding the surfels supplement fine-scale appearance details. The rendering with GESs consists of two passes -- surfels are first rasterized through a standard graphics pipeline to produce depth and color maps, and then Gaussians are splatted with depth testing and color accumulation on each pixel order independently. The optimization of GESs from multi-view images is performed through an elaborate coarse-to-fine procedure, faithfully capturing rich scene appearance. The entirely sorting-free rendering of GESs not only achieves very fast rates, but also produces view-consistent images, successfully avoiding popping artifacts under view changes. The basic GES representation can be easily extended to achieve anti-aliasing in rendering (Mip-GES), boosted rendering speeds (Speedy-GES) and compact storage (Compact-GES), and reconstruct better scene geometries by replacing 3D Gaussians with 2D Gaussians (2D-GES). Experimental results show that GESs advance the state-of-the-arts as a compelling representation for ultra-fast high-fidelity radiance field rendering.*
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{ges25ye,
-author = {Ye, Keyang and Shao, Tianjia and Zhou, Kun},
-title = {When Gaussian Meets Surfel: Ultra-fast High-fidelity Radiance Field Rendering},
-year = {2025},
-issue_date = {August 2025},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {44},
-number = {4},
-issn = {0730-0301},
-url = {https://doi.org/10.1145/3730925},
-doi = {10.1145/3730925},
-month = jul,
-articleno = {113},
-numpages = {15},
-}</code></pre>
-  </div>
-</section>
-
 ## 🚀 Major Update: WebGL Viewer
 
 We are excited to introduce the **GES Web Viewer**, a lightweight online interface powered by WebGL. This new feature allows you to interactively explore trained scenes directly in your web browser—no installation required!
@@ -100,3 +78,25 @@ We add a simple blur post-processing shader to the rendered surfel color map. Ex
 ## Acknowledgments
 
 Our Pytorch code is built upon [3DGS](https://github.com/graphdeco-inria/gaussian-splatting), [2DGS](https://github.com/hbb1/2d-gaussian-splatting) and [MipSplatting](https://github.com/autonomousvision/mip-splatting). Our OpenGL viewer implementation incorporates code segments from  [Splatapult](https://github.com/hyperlogic/splatapult). We sincerely appreciate their contributions.
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{ges25ye,
+author = {Ye, Keyang and Shao, Tianjia and Zhou, Kun},
+title = {When Gaussian Meets Surfel: Ultra-fast High-fidelity Radiance Field Rendering},
+year = {2025},
+issue_date = {August 2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {44},
+number = {4},
+issn = {0730-0301},
+url = {https://doi.org/10.1145/3730925},
+doi = {10.1145/3730925},
+month = jul,
+articleno = {113},
+numpages = {15},
+}</code></pre>
+  </div>
+</section>
