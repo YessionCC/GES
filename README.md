@@ -19,16 +19,26 @@ We are excited to introduce the **GES Web Viewer**, a lightweight online interfa
 
 
 ## Installation
-First, please refer to the setup tutorial of vanilla [3DGS](https://github.com/graphdeco-inria/gaussian-splatting). Then, install the following submodules.
+
+In short, you can use `conda` to set up the environment as follows:
 
 ```
-pip install submodules/ges_rasterization_init2
+SET DISTUTILS_USE_SDK=1 # Windows only
+conda env create --file environment.yml
+conda activate gaussian_splatting
+```
+
+This assumes you have CUDA 11 installed.  For working with other CUDA versions, as well as more detailed setup instructions, please refer to the [setup documentation of vanilla 3DGS](https://github.com/graphdeco-inria/gaussian-splatting?tab=readme-ov-file#setup).
+
+Alternatively, complete the setup instructions for vanilla 3DGS and then
+install the following submodules manually:
+```
+pip install submodules/ges_rasterization_init2D
 pip install submodules/ges_rasterization_surfel
 pip install submodules/ges_rasterization_surfel_reg
 pip install submodules/ges_rasterization_joint_s
 pip install submodules/ges_rasterization_joint_g
 ```
-We may integrate these submodules in the future and simplify the installation process.
 
 ## Datasets
 We mainly test our method on *MipNeRF360*, *DeepBlending*, *Tank and Temples* and *NeRF Synthetic* datasets, and use the same test settings as vanilla 3DGS.
